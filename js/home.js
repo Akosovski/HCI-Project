@@ -1,7 +1,7 @@
 $(function(){
     console.log('hello')
     imgSlide = $('#img-slide')
-    var imgPath = ['test1.png', 'test2.png', 'test3.png', 'test4.png'];
+    var imgPath = ['./img/test1.png', './img/test2.png', './img/test3.png', './img/test4.png'];
     var currentImg = 0;
     var pathLength = imgPath.length
 

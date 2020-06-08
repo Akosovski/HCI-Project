@@ -186,19 +186,19 @@ input[name="r"]{
     display: block;
 }
 
-#left-btn {
+.slides2 button {
+    background-color: black;
     display: none;
-    opacity: 30%;
+    opacity: 20%;
     border: none;
     position: absolute;
+}
+
+#left-btn {
     left: 0px;
 }
 
 #right-btn {
-    display: none;
-    opacity: 20%;
-    border: none;
-    position : absolute;
     right:0px;
 }
 
