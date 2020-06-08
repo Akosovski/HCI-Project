@@ -178,6 +178,30 @@ input[name="r"]{
     margin-left: -60%;
 }
 
+.slides2 {
+    position: relative;
+}
+
+.slides2:hover #left-btn, .slides2:hover #right-btn {
+    display: block;
+}
+
+#left-btn {
+    display: none;
+    opacity: 30%;
+    border: none;
+    position: absolute;
+    left: 0px;
+}
+
+#right-btn {
+    display: none;
+    opacity: 20%;
+    border: none;
+    position : absolute;
+    right:0px;
+}
+
 #footer{
     background-color: black;
     height: 360px;
