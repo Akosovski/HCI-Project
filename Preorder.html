@@ -40,7 +40,7 @@
                     <h2>Rp 419.000<br>€25.99</h2>
                 </div>
             </div>
-            <form id="preorder-form">
+            <form id="preorder-form" action="orderpage.html">
                 <div class="operator2">
                     <img src="operator1.png" class="righter"alt="operator1" width=505px height=610px/>
                 </div>
@@ -50,15 +50,15 @@
 
                 <h1>Data Inquiry</h1>
                 <p id="username-warning"></p>
-                <input id="username-fill" type="text" name="Username" class="form_reg" placeholder="Username" onchange="checkUsername()">
+                <input id="username-fill" type="text" name="Username" class="form_reg" placeholder="Username" onchange="checkUsername()" required>
                 <br>
                 
                 <p id="email-warning"></p>
-                <input id="email-fill" type="text" name="Email" class="form_reg" placeholder="Email" onchange="checkEmail()">
+                <input id="email-fill" type="text" name="Email" class="form_reg" placeholder="Email" onchange="checkEmail()" required>
                 <br>
                
                 <p id="password-warning"></p>
-                <input id="password-fill" type="text" name="Phone Number" class="form_reg" placeholder="Password" onchange="checkpassword()">
+                <input id="password-fill" type="text" name="Phone Number" class="form_reg" placeholder="Password" onchange="checkpassword()" required>
                 <br>
               
                 <select id="country-fill">
@@ -305,7 +305,7 @@
                 <br>
                 
                 <p id="copy-warning"></p>
-                <input id="copy-fill" type="text" name="CC number" class="form_reg" placeholder="Number of Copies" onchange="checkCopy()">
+                <input id="copy-fill" type="text" name="CC number" class="form_reg" placeholder="Number of Copies" onchange="checkCopy()" required>
                 <br>
               
                 <select id="item-type">
@@ -316,7 +316,7 @@
                 <br>
 
                 <p id="radio-warning"></p>
-                <input type="radio" id="agree" name="t&c" value="I agree">
+                <input id="agree-radio" type="radio" id="agree" name="t&c" value="I agree" required>
                 <label class="lebel">I agree to Upisoft Terms & Service</label>
                 <br>
                 <input id="submit" type="submit" class="tombol_reg" value="Proceed">
