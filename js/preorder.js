@@ -1,10 +1,10 @@
 function checkUsername(){
-    var emailValue = document.getElementById("username-fill").value;
+    var username = document.getElementById("username-fill").value;
     var warning = document.getElementById("username-warning");
 
-    if (emailValue.length < 8){
+    if (username.length < 8){
         warning.innerHTML = "username too short!";
-    }else if (emailValue.length > 20) {
+    }else if (username.length > 20) {
         warning.innerHTML = "username too long!";
     }else {
         warning.innerHTML = "";
@@ -29,10 +29,28 @@ function checkEmail(){
     }
 }
 
-function checkPhone(){
+function checkpassword(){
+    var password = document.getElementById("password-fill").value;
+    var warning = document.getElementById("password-warning");
 
+    if (password.length < 8){
+        warning.innerHTML = "password is too short!";
+    }else if (password.length > 20) {
+        warning.innerHTML = "password is too long!";
+    }else {
+        warning.innerHTML = "";
+    }
 }
 
 function checkCopy(){
+    var copy = document.getElementById("copy-fill").value;
+    var warning = document.getElementById("copy-warning");
 
+    if (copy <= 0){
+        warning.innerHTML = "numper of copies is too low!";
+    }else if (copy > 10) {
+        warning.innerHTML = "number of copies is too many";
+    }else {
+        warning.innerHTML = "";
+    }
 }
