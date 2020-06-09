@@ -8,6 +8,8 @@
             rel="stylesheet"
             />
         <link rel="stylesheet" href="./PreorderStyle.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/preorder.js"></script>
         <title>Pre-Order</title>
     </head>
     <body>
@@ -38,24 +40,28 @@
                     <h2>Rp 419.000<br>€25.99</h2>
                 </div>
             </div>
-            <form>
+            <form id="preorder-form">
                 <div class="operator2">
                     <img src="operator1.png" class="righter"alt="operator1" width=505px height=610px/>
                 </div>
                 <div class="operator1">
                     <img src="operator2.png" class="lefter" alt="operator2" width=500px height=609px/>
                 </div>
+
                 <h1>Data Inquiry</h1>
-                <input type="text" name="Username" class="form_reg" placeholder="Username">
+                <p id="username-warning"></p>
+                <input id="username-fill" type="text" name="Username" class="form_reg" placeholder="Username" onchange="checkUsername()">
                 <br>
                 
-                <input type="text" name="Email" class="form_reg" placeholder="Email">
+                <p id="email-warning"></p>
+                <input id="email-fill" type="text" name="Email" class="form_reg" placeholder="Email" onchange="checkEmail()">
                 <br>
                
-                <input type="text" name="Phone Number" class="form_reg" placeholder="Password">
+                <p id="phone-warning"></p>
+                <input id="phone-fill" type="text" name="Phone Number" class="form_reg" placeholder="Password" onchange="checkPhone()">
                 <br>
               
-                <select>
+                <select id="country-fill">
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
                     <option value="Algeria">Algeria</option>
@@ -297,16 +303,21 @@
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
                 <br>
-              
-                <input type="text" name="CC number" class="form_reg" placeholder="Number of Copies">
+                
+                <p id="copy-warning"></p>
+                <input id="copy-fill" type="text" name="CC number" class="form_reg" placeholder="Number of Copies" onchange="checkCopy()">
                 <br>
               
-                <input type="text" name="Age" class="form_reg" placeholder="Type of The Game">
+                <select id="item-type">
+                    <option value="Deluxe Edition">Deluxe Edition</option>
+                    <option value="Standard Edition">Standard Edition</option>
+                    <option value="Season Pass">Season Pass</option>
+                </select>
                 <br>
                 <input type="radio" id="agree" name="t&c" value="I agree">
                 <label class="lebel">I agree to Upisoft Terms & Service</label>
                 <br>
-                <input type="submit" class="tombol_reg" value="Proceed">
+                <input id="submit" type="submit" class="tombol_reg" value="Proceed">
      
         </main>
     </body>
